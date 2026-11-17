@@ -1,43 +1,73 @@
-# ESP32-C3 Dev Board (KiCad) ⚡
+<div align="center">
 
-A custom **ESP32-C3 development board** designed in **KiCad**, built for compact embedded prototyping with
-**USB-C input, LiPo charging, stable 3.3V regulation**, and expansion headers for sensors/modules.
+# ESP32-C3 Battery-Powered Dev Board
 
-✅ Focus: **Embedded Hardware • PCB Design • Power + IO Integration**
+**A compact ESP32-C3 development board with USB-C, single-cell LiPo charging, 3.3 V regulation and onboard sensor footprints. KiCad source and ready-to-order Gerbers included.**
+
+![KiCad](https://img.shields.io/badge/KiCad-PCB-314CB0?style=for-the-badge&logo=kicad&logoColor=white)
+![ESP32-C3](https://img.shields.io/badge/ESP32--C3-RISC--V-E7352C?style=for-the-badge&logo=espressif&logoColor=white)
+![Gerbers](https://img.shields.io/badge/Gerbers-included-22c55e?style=for-the-badge)
+![License](https://img.shields.io/badge/license-MIT-22c55e?style=for-the-badge)
+
+<img src="docs/images/pcb-layout.png" width="75%" alt="PCB layout"/>
+
+</div>
 
 ---
 
-## ✅ Key Features
-- **ESP32-C3-WROOM module**
-- **USB-C power input**
-- **Single-cell LiPo charging circuit**
-- **3.3V regulation** for stable MCU + peripherals
-- **Boot / Reset circuit** for easy programming
+## Why
+
+Off-the-shelf ESP32 boards usually skip the battery. This one is built for portable IoT prototypes: plug in a LiPo, charge over USB-C, and you have a Wi-Fi + BLE node that runs untethered.
+
+## Features
+
+- **ESP32-C3-WROOM** module (RISC-V, Wi-Fi + Bluetooth LE)
+- **USB-C** power input
+- **Single-cell LiPo charger** on board
+- **3.3 V regulation** for the MCU and peripherals
+- **BOOT / RESET** buttons for easy flashing
 - **GPIO breakout headers** for expansion
-- Sensor/module support (example: **BME280**, mic amplifier, photo sensor)
+- Footprints for onboard sensors (environment sensor, microphone amplifier, light sensor)
+- 2.5 mm mounting holes and test points
 
----
+## Files
 
-## 📷 PCB Preview
-### Top Layer
-![Top](docs/pcb-renders/top.png)
+| What | Where |
+|---|---|
+| Schematic (PDF) | [`docs/schematic.pdf`](docs/schematic.pdf) |
+| KiCad schematic | `hardware/kicad/esp32prj.kicad_sch` |
+| KiCad PCB | `hardware/kicad/esp32prj.kicad_pcb` |
+| **Gerbers (ready to order)** | [`fabrication/esp32-c3-devboard-gerbers.zip`](fabrication/esp32-c3-devboard-gerbers.zip) |
 
-### Bottom Layer
-![Bottom](docs/pcb-renders/bottom.png)
+## Order your own
 
----
+1. Download [`fabrication/esp32-c3-devboard-gerbers.zip`](fabrication/esp32-c3-devboard-gerbers.zip).
+2. Upload it as-is to any PCB fab (JLCPCB, PCBWay, etc.).
+3. Use the [schematic](docs/schematic.pdf) as your parts list for assembly.
 
-## 📂 Repository Structure
-```txt
-esp-devboard-prateek/
-│── README.md
-│── LICENSE
-│
-├── hardware/
-│   └── kicad/               # KiCad project files (.kicad_pro/.sch/.pcb)
-│
-├── docs/
-│   ├── schematic.pdf        # Schematic export
-│   └── pcb-renders/         # Top/Bottom/3D screenshots
-│
-└── fabrication/             # (optional) Gerbers, drill, BOM, PnP outputs
+## Edit it
+
+1. Install [KiCad](https://www.kicad.org/download/).
+2. Clone the repo:
+   ```bash
+   git clone https://github.com/Prateek-elec/esp-devboard-prateek.git
+   ```
+3. Open `hardware/kicad/esp32prj.kicad_sch` and `esp32prj.kicad_pcb`.
+
+## Roadmap
+
+- [x] Schematic + PCB
+- [x] Gerbers
+- [ ] BOM / pick-and-place for assembly
+- [ ] 3D renders and photos of the assembled board
+- [ ] Example Arduino / ESP-IDF sketches for the onboard sensors
+
+## License
+
+[MIT](LICENSE) © Prateek Sarkar
+
+<div align="center">
+
+**Building something battery-powered with the ESP32-C3? A ⭐ helps others find this.**
+
+</div>
