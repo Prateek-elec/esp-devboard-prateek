@@ -1,6 +1,6 @@
 <div align="center">
 
-# ESP32-C3 Battery-Powered Dev Board
+<img src="docs/banner.png" alt="ESP32-C3 Battery Dev Board" width="100%"/>
 
 **A compact ESP32-C3 development board with USB-C, single-cell LiPo charging, 3.3 V regulation and onboard sensor footprints. KiCad source and ready-to-order Gerbers included.**
 
@@ -9,13 +9,18 @@
 ![Gerbers](https://img.shields.io/badge/Gerbers-included-22c55e?style=for-the-badge)
 ![License](https://img.shields.io/badge/license-MIT-22c55e?style=for-the-badge)
 
-<img src="docs/images/pcb-layout.png" width="75%" alt="PCB layout"/>
-
 </div>
 
 ---
 
-## Why
+## 🔥 Why it hits different
+
+- 🔋 **Battery-ready:** single-cell LiPo charging built in, so your IoT node runs untethered.
+- 🔌 **USB-C:** power and programming over one modern port.
+- 📦 **Gerbers ready to order:** upload the zip to any fab and you're done.
+- 🧪 **Sensor footprints on board:** prototype without a breadboard.
+
+## The problem it solves
 
 Off-the-shelf ESP32 boards usually skip the battery. This one is built for portable IoT prototypes: plug in a LiPo, charge over USB-C, and you have a Wi-Fi + BLE node that runs untethered.
 
@@ -66,8 +71,16 @@ Off-the-shelf ESP32 boards usually skip the battery. This one is built for porta
 
 [MIT](LICENSE) © Prateek Sarkar
 
+---
+
 <div align="center">
 
-**Building something battery-powered with the ESP32-C3? A ⭐ helps others find this.**
+### If this made you go *"wait, that's sick"* 👀
+
+**Drop a ⭐ so more builders find it, and share it with someone who'd build one.**
+
+[![Share on X](https://img.shields.io/badge/share%20on-X-000000?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/intent/tweet?text=An%20ESP32-C3%20dev%20board%20that%20runs%20on%20a%20LiPo%2C%20Gerbers%20included%20%E2%9A%A1&url=https%3A%2F%2Fgithub.com%2FPrateek-elec%2Fesp-devboard-prateek)
+[![Share on LinkedIn](https://img.shields.io/badge/share%20on-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fgithub.com%2FPrateek-elec%2Fesp-devboard-prateek)
+[![Follow](https://img.shields.io/badge/follow-@Prateek--elec-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Prateek-elec)
 
 </div>
