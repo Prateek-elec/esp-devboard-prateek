@@ -13,7 +13,7 @@
 
 ---
 
-## 🔥 Why it hits different
+## Highlights
 
 - 🔋 **Battery-ready:** single-cell LiPo charging built in, so your IoT node runs untethered.
 - 🔌 **USB-C:** power and programming over one modern port.
@@ -75,7 +75,7 @@ Off-the-shelf ESP32 boards usually skip the battery. This one is built for porta
 
 <div align="center">
 
-### If this made you go *"wait, that's sick"* 👀
+### Found this useful?
 
 **Drop a ⭐ so more builders find it, and share it with someone who'd build one.**
 
